@@ -1,0 +1,39 @@
+/* Home container */
+.home-container {
+  border: 3px solid #9E0202;
+  border-left: 3px;
+  border-right: 3px;
+  border-top: 3px;
+  border-bottom: 3px;
+  width: 950px;
+  padding: 2px;
+  margin: auto;
+  margin-top: 2%;
+  background-color: rgba(0, 0, 0, 0.40);
+}
+
+.home-title {
+  font: 30px 'Open Sans Condensed', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.home-info {
+  font: 18px 'Open Sans Condensed', sans-serif;
+  color: white;
+  font-style: normal;
+}
+
+.home-info-container {
+  text-align: left;
+  border: 3px solid #9E0202;
+  border-top: 3px;
+  border-right: 3px;
+  border-bottom: 3px;
+  width: auto;
+  padding: 2px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.40);
+  padding-left: 20px;
+  padding-right: 20px;
+} /* End of home container */
