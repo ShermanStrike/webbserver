@@ -1,3 +1,25 @@
+body {
+  background-image: url("nuke.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+  background-color: pink;
+
+}
+
+main {
+  margin: auto;
+  width: 60%;
+}
+.header {
+ width: 500px;
+  padding: 2px;
+  margin: auto;
+  text-align: center;
+}
+.logo {
+  width: 500px;
+}
+
 /* Home container */
 .home-container {
   border: 3px solid #9E0202;
@@ -5,7 +27,7 @@
   border-right: 3px;
   border-top: 3px;
   border-bottom: 3px;
-  width: 950px;
+  width: 500px;
   padding: 2px;
   margin: auto;
   margin-top: 2%;
@@ -13,15 +35,16 @@
 }
 
 .home-title {
-  font: 30px 'Open Sans Condensed', sans-serif;
+  font: bold 30px 'Atomic Age', serif;
   color: white;
   text-align: center;
 }
 
 .home-info {
-  font: 18px 'Open Sans Condensed', sans-serif;
+  font: 24px 'Atomic Age', serif;
   color: white;
   font-style: normal;
+  letter-spacing: 1.5px;
 }
 
 .home-info-container {
