@@ -4,6 +4,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Atomic+Age" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Sancreek" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Smokum" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700" rel="stylesheet">
 
 	<title></title>
 		<link rel="stylesheet" href="style.css">
@@ -13,14 +14,25 @@
 <div class="header">
 	<img class="logo" src="Vault.png">
 	</div>
+<div class="input-container">
+	<p>-RobCo Vault Management System-</p>
+	<p>===============================================</p>
+	<div class="input">
+			<p>RobcOS v.14.10.08</p>
+			<p>(C)2076 RobCo</p>
+			<p>===============================================</p>
+			<p> | Welcome User </p>
 <form action="test.php" method="post">
-	title:
-	<input type="text" name="title"><br>
-	message:
-	<input type="text" name="message"><br>
-	<input type="submit" name="submit">
+	<label for="TITLE">| >> Title: </label>
+	<input class="inputfont" type="text" name="TITLE"><br>
+	<label for="MESSAGE">| >> Message: </label>
+	<input class="inputfont" type="text" name="MESSAGE"><br>
+	<label for="submit">| </label>
+	<input class="submitfont" type="submit" name="submit" value="SEND_info">
 </form>
-
+	<p>===============================================</p>
+	</div>
+</div>
 <?php
 
 //$dbh = new PDO("mysql:host=localhost;dbname=blog;charset=utf8",

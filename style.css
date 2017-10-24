@@ -1,8 +1,14 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(FSEX300.ttf);
+}
+
 body {
-  background-image: url("nuke.jpg");
+  background-image: url("standbytimer.gif");
   background-size: 100%;
   background-attachment: fixed;
   background-color: pink;
+  background-position: center;
 
 }
 
@@ -10,19 +16,62 @@ main {
   margin: auto;
   width: 60%;
 }
+
 .header {
- width: 500px;
+ width: 700px;
   padding: 2px;
   margin: auto;
   text-align: center;
 }
+
 .logo {
-  width: 500px;
+  width: 700px;
+}
+
+.input-container {
+  border: 3px solid #FAA934;
+  border-left: 3px;
+  border-right: 3px;
+  border-bottom: 3px;
+  width: 700px;
+  padding: px;
+  margin: auto;
+  margin-top: 30%;
+  background-color: rgba(0, 0, 0, 0.40);
+  font: 30px 'myFirstFont', serif;
+  color: #FAA934;
+}
+
+.input {
+  border: 3px solid #FAA934;
+  border-left: 3px;
+  border-right: 3px;
+  width: 700px;
+  padding-top: 8px;
+  margin: auto;
+  margin-top: 5px;
+  background-color: rgba(0, 0, 0, 0.00);
+  font: 30px 'myFirstFont', serif;
+  color: #FAA934;
+}
+
+.inputfont {
+  font: 30px 'myFirstFont', serif;
+  color: #FAA934;
+  background-color: rgba(0, 0, 0, 0.00);
+  border: 0px;
+}
+
+.submitfont {
+  font: 30px 'myFirstFont', serif;
+  background-color: rgba(0, 0, 0, 0.00);
+  color: #FAA934;
+  border: 0px;
 }
 
 /* Home container */
 .home-container {
-  border: 3px solid #9E0202;
+  border: 3px solid white;
   border-left: 3px;
   border-right: 3px;
   border-top: 3px;
@@ -30,7 +79,7 @@ main {
   width: 500px;
   padding: 2px;
   margin: auto;
-  margin-top: 2%;
+  margin-top: 30%;
   background-color: rgba(0, 0, 0, 0.40);
 }
 
@@ -49,10 +98,11 @@ main {
 
 .home-info-container {
   text-align: left;
-  border: 3px solid #9E0202;
-  border-top: 3px;
+  border: 3px solid white;
+  border-top: px;
   border-right: 3px;
-  border-bottom: 3px;
+  border-bottom: px;
+  border-left: 3px;
   width: auto;
   padding: 2px;
   margin: auto;
@@ -60,3 +110,8 @@ main {
   padding-left: 20px;
   padding-right: 20px;
 } /* End of home container */
+
+p {
+  margin: 0px;
+  padding: 0px;
+}
