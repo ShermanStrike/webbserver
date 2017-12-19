@@ -6,7 +6,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Smokum" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700" rel="stylesheet">
 
-	<title>Terminal</title>
+	<title></title>
 		<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -29,9 +29,9 @@
 	<label for="TITLE"><p>| >> Title: </p><span>|</span></label>
 	<input class="inputfont" type="text" name="TITLE">
 	<label for="MESSAGE"><p>| >> Message: </p><span>|</span></label>
-	<input class="inputfont" type="text" name="CONTENT"><br>
+	<input class="inputfont" type="text" name="MESSAGE"><br>
 	<label for="submit">| </label>
-	<input class="submitfont" type="submit" name="submit">
+	<input class="submitfont" type="submit" name="submit" value="SEND_info">
 </form>
 	<p>===============================================</p>
 	</div>
@@ -52,15 +52,11 @@ $dbh = new PDO("mysql:host=localhost;dbname=blog;charset=utf8",
 	"");
 
 if (isset($_POST['submit'])) {
-	//$sql = "insert into posts(title, content)
-	//values ( ' " . $_POST['title'] . "', '" . $_POST['message'] . "')";
-	$sql = "INSERT INTO posts(title, content) VALUES (:title, :content)";
-	$stmt = $dbh->prepare($sql);
-	$stmt->bindParam(":title", $_POST['TITLE']);
-	$stmt->bindParam(":content", $_POST['CONTENT']);
-	$stmt->execute();
+	$sql = "insert into posts( title, content)
+	values ( ' " . $_POST['title'] . "', '" . $_POST['message'] . "')";
+$stmt = $dbh->prepare($sql);
+$stmt->execute();
 
-	$_POST = array();
 }
 
 
